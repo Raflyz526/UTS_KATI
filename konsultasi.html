@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MI-Tech | Konsultasi</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #0077cc;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+      marquee {
+        background-color: gray;
+      }
+      nav {
+        background-color: #005fa3;
+        padding: 10px;
+        color: white;
+        text-align: center;
+      }
+      nav a {
+        color: white;
+        margin: 0 15px;
+        text-decoration: none;
+      }
+      .container {
+        display: flex;
+        flex-direction: row;
+      }
+      .content {
+        flex: 6;
+        padding: 20px;
+      }
+      .sidebar {
+        flex: 1;
+        background-color: #f2f2f2;
+        padding: 20px;
+        border-left: 1px solid #ccc;
+      }
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Formulir Konsultasi</h1>
+    </header>
+
+    <nav>
+      <a href="index.html">Beranda</a>
+      <a href="layanan.html">Layanan</a>
+      <a href="konsultasi.html">Konsultasi</a>
+      <a href="tentang.html">Tentang Kami</a>
+    </nav>
+
+    <marquee
+      >📝 Silakan isi formulir untuk pemesanan layanan servis Anda!</marquee
+    >
+
+    <div
+      class="content"
+      style="max-width: 700px; margin: 0 auto; padding: 20px"
+    >
+      <h2 style="color: #0077cc">📝 Formulir Konsultasi & Pemesanan Layanan</h2>
+      <p>
+        Silakan isi formulir di bawah ini untuk melakukan reservasi atau
+        berkonsultasi dengan tim teknisi MI-Tech.
+      </p>
+
+      <form
+        action="#"
+        method="post"
+        style="
+          background-color: #f9f9f9;
+          border: 1px solid #ccc;
+          padding: 20px;
+          border-radius: 10px;
+        "
+      >
+        <label for="nama" style="display: block; margin-bottom: 5px"
+          >👤 Nama Lengkap:</label
+        >
+        <input
+          type="text"
+          id="nama"
+          name="nama"
+          required
+          style="width: 100%; padding: 8px; margin-bottom: 15px"
+        />
+
+        <label for="email" style="display: block; margin-bottom: 5px"
+          >📧 Email:</label
+        >
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          style="width: 100%; padding: 8px; margin-bottom: 15px"
+        />
+
+        <label for="telepon" style="display: block; margin-bottom: 5px"
+          >📱 Nomor Telepon / WhatsApp:</label
+        >
+        <input
+          type="tel"
+          id="telepon"
+          name="telepon"
+          required
+          style="width: 100%; padding: 8px; margin-bottom: 15px"
+        />
+
+        <label for="layanan" style="display: block; margin-bottom: 5px"
+          >🔧 Pilih Jenis Layanan:</label
+        >
+        <select
+          id="layanan"
+          name="layanan"
+          required
+          style="width: 100%; padding: 8px; margin-bottom: 15px"
+        >
+          <option value="">-- Pilih Layanan --</option>
+          <option>Servis Laptop</option>
+          <option>Servis Komputer</option>
+          <option>Servis Printer</option>
+          <option>Upgrade Komponen</option>
+          <option>Layanan Khusus Instansi</option>
+        </select>
+
+        <label for="tanggal" style="display: block; margin-bottom: 5px"
+          >📆 Tanggal Servis yang Diinginkan:</label
+        >
+        <input
+          type="date"
+          id="tanggal"
+          name="tanggal"
+          style="width: 100%; padding: 8px; margin-bottom: 15px"
+        />
+
+        <label for="alamat" style="display: block; margin-bottom: 5px"
+          >🏠 Alamat Lokasi (Jika antar-jemput):</label
+        >
+        <textarea
+          id="alamat"
+          name="alamat"
+          rows="3"
+          style="width: 100%; padding: 8px; margin-bottom: 15px"
+        ></textarea>
+
+        <label for="catatan" style="display: block; margin-bottom: 5px"
+          >📝 Catatan Tambahan:</label
+        >
+        <textarea
+          id="catatan"
+          name="catatan"
+          rows="4"
+          style="width: 100%; padding: 8px; margin-bottom: 15px"
+        ></textarea>
+
+        <input
+          type="submit"
+          value="Kirim Permintaan"
+          style="
+            background-color: #0077cc;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+          "
+        />
+      </form>
+
+      <p
+        style="
+          margin-top: 20px;
+          padding-bottom: 150px;
+          font-size: 0.9em;
+          color: #555;
+        "
+      >
+        Setelah form dikirim, tim kami akan menghubungi Anda dalam waktu
+        maksimal 24 jam untuk konfirmasi jadwal dan informasi tambahan.
+      </p>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 MI-Tech. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
