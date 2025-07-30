@@ -5,57 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MI-Tech | Layanan</title>
     <link rel="stylesheet" href="style.css" />
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-      }
-      header {
-        background-color: #0077cc;
-        color: white;
-        padding: 20px;
-        text-align: center;
-      }
-      marquee {
-        background-color: gray;
-      }
-      nav {
-        background-color: #005fa3;
-        padding: 10px;
-        color: white;
-        text-align: center;
-      }
-      nav a {
-        color: white;
-        margin: 0 15px;
-        text-decoration: none;
-      }
-      .container {
-        display: flex;
-        flex-direction: row;
-      }
-      .content {
-        flex: 6;
-        padding: 20px;
-      }
-      .sidebar {
-        flex: 1;
-        background-color: #f2f2f2;
-        padding: 20px;
-        border-left: 1px solid #ccc;
-      }
-      footer {
-        background-color: #333;
-        color: white;
-        text-align: center;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        position: relative;
-        bottom: 0;
-        width: 100%;
-      }
-    </style>
   </head>
   <body>
     <header>
@@ -76,7 +25,6 @@
     >
 
     <div class="container">
-      <!-- Konten Utama -->
       <div class="content">
         <h2 style="color: #0077cc">💼 Pilihan Layanan MI-Tech</h2>
         <p>
@@ -84,7 +32,7 @@
           perangkat Anda.
         </p>
 
-        <!-- Grid Card Layanan -->
+        <!-- Grid Card Layanan dengan Gambar -->
         <div
           style="display: flex; flex-wrap: wrap; gap: 20px; margin-bottom: 30px"
         >
@@ -92,16 +40,22 @@
           <div
             style="
               flex: 1 1 45%;
-              background-color: #e6f2ff;
+              background-color: #fff;
               padding: 15px;
               border-radius: 8px;
               border: 1px solid #ccc;
+              box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
             "
           >
-            <h3 style="color: #005fa3">🧑‍💻 Servis Laptop</h3>
+            <img
+              src="laptop.jpg"
+              alt="Servis Laptop"
+              style="width: 100%; border-radius: 5px; margin-bottom: 10px"
+            />
+            <h3 style="color: #005fa3">Servis Laptop</h3>
             <p>
               Pengecekan & perbaikan sistem operasi, penggantian keyboard,
-              baterai, dan lain-lain.
+              baterai, dan lainnya.
             </p>
             <p><strong>Harga:</strong> Rp 150.000</p>
             <a href="konsultasi.html">[Pesan Sekarang]</a>
@@ -111,16 +65,22 @@
           <div
             style="
               flex: 1 1 45%;
-              background-color: #f9f9f9;
+              background-color: #fff;
               padding: 15px;
               border-radius: 8px;
               border: 1px solid #ccc;
+              box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
             "
           >
-            <h3 style="color: #005fa3">🖥️ Servis Komputer</h3>
+            <img
+              src="komputer.jpg"
+              alt="Servis Komputer"
+              style="width: 100%; border-radius: 5px; margin-bottom: 10px"
+            />
+            <h3 style="color: #005fa3">Servis Komputer</h3>
             <p>
               Perbaikan hardware, pemasangan ulang Windows, upgrade RAM/SSD, dan
-              lain-lain.
+              lainnya.
             </p>
             <p><strong>Harga:</strong> Rp 200.000</p>
             <a href="konsultasi.html">[Pesan Sekarang]</a>
@@ -130,13 +90,19 @@
           <div
             style="
               flex: 1 1 45%;
-              background-color: #e6f2ff;
+              background-color: #fff;
               padding: 15px;
               border-radius: 8px;
               border: 1px solid #ccc;
+              box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
             "
           >
-            <h3 style="color: #005fa3">🖨️ Servis Printer</h3>
+            <img
+              src="printer.jpg"
+              alt="Servis Printer"
+              style="width: 100%; border-radius: 5px; margin-bottom: 10px"
+            />
+            <h3 style="color: #005fa3">Servis Printer</h3>
             <p>
               Cleaning head, ganti roller, tinta mampet, tidak terdeteksi
               komputer, dan lainnya.
@@ -149,13 +115,19 @@
           <div
             style="
               flex: 1 1 45%;
-              background-color: #f9f9f9;
+              background-color: #fff;
               padding: 15px;
               border-radius: 8px;
               border: 1px solid #ccc;
+              box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
             "
           >
-            <h3 style="color: #005fa3">🔧 Upgrade Komponen</h3>
+            <img
+              src="upgrade.jpg"
+              alt="Upgrade Komponen"
+              style="width: 100%; border-radius: 5px; margin-bottom: 10px"
+            />
+            <h3 style="color: #005fa3">Upgrade Komponen</h3>
             <p>
               Peningkatan performa dengan upgrade RAM, SSD, GPU atau komponen
               lain sesuai kebutuhan.
@@ -175,42 +147,26 @@
         </ul>
 
         <h3 style="color: #0077cc">🎁 Bonus & Promo</h3>
-        <p>Dapatkan:</p>
         <ul style="padding-left: 20px">
           <li>Gratis antivirus premium</li>
           <li>Diskon 50% untuk pelanggan baru</li>
           <li>Voucher cashback untuk layanan berikutnya</li>
         </ul>
 
-        <!-- Testimoni Pelanggan -->
         <section style="margin-top: 40px">
           <h3 style="color: #0077cc">📣 Apa Kata Pelanggan Kami</h3>
-          <blockquote
-            style="
-              background-color: #f9f9f9;
-              border-left: 4px solid #0077cc;
-              padding: 15px;
-              margin-bottom: 20px;
-            "
-          >
-            “Pelayanan cepat dan ramah! Laptop saya kembali normal dalam 2 hari.
-            Sukses selalu MI-Tech!”<br />
+          <blockquote>
+            "Pelayanan cepat dan ramah! Laptop saya kembali normal dalam 2 hari.
+            Sukses selalu MI-Tech!"<br />
             <em>- Lestari, Mahasiswi</em>
           </blockquote>
-          <blockquote
-            style="
-              background-color: #f9f9f9;
-              border-left: 4px solid #0077cc;
-              padding: 15px;
-            "
-          >
-            “Printer kantor sering error, teknisi MI-Tech langsung tangani dan
-            beres. Harganya transparan dan prosesnya jelas.”<br />
+          <blockquote>
+            "Printer kantor sering error, teknisi MI-Tech langsung tangani dan
+            beres. Harganya transparan dan prosesnya jelas."<br />
             <em>- Pak Rahman, Admin Sekolah</em>
           </blockquote>
         </section>
 
-        <!-- Alur Servis -->
         <section style="margin-top: 40px">
           <h3 style="color: #0077cc">🛠️ Alur Layanan MI-Tech</h3>
           <ol style="padding-left: 20px; line-height: 1.8">
@@ -227,7 +183,6 @@
           </ol>
         </section>
 
-        <!-- Layanan Korporat -->
         <section style="margin-top: 40px">
           <h3 style="color: #0077cc">
             🏢 Layanan untuk Instansi dan Perusahaan
@@ -245,9 +200,7 @@
         </section>
       </div>
 
-      <!-- Sidebar -->
       <div class="sidebar">
-        <!-- Promo Singkat -->
         <div
           style="
             background-color: #ffffff;
@@ -265,7 +218,6 @@
           </ul>
         </div>
 
-        <!-- Info Kontak -->
         <div
           style="
             background-color: #e6f7ff;
@@ -275,21 +227,13 @@
           "
         >
           <h4 style="margin-top: 0; color: #0077cc">📞 Hubungi Kami</h4>
+          <p><strong>WhatsApp:</strong><br />0831-0887-3487</p>
+          <p><strong>Email:</strong><br />info@mi-tech.id</p>
           <p>
-            <strong>WhatsApp:</strong><br />
-            0831-0887-3487
-          </p>
-          <p>
-            <strong>Email:</strong><br />
-            info@mi-tech.id
-          </p>
-          <p>
-            <strong>Jam Operasional:</strong><br />
-            Senin - Sabtu, 08.00 - 17.00
+            <strong>Jam Operasional:</strong><br />Senin - Sabtu, 08.00 - 17.00
           </p>
         </div>
 
-        <!-- Tips Pelanggan -->
         <div
           style="
             background-color: #fefefe;
