@@ -13,9 +13,18 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   const form = document.querySelector("form");
-  if (form) {
-    form.addEventListener("submit", function (e) {
-      alert("Terima kasih! Formulir Anda akan segera diproses.");
-    });
-  }
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    const formData = {
+      nama: form.nama.value,
+      email: form.email.value,
+      telepon: form.telepon.value,
+      layanan: form.layanan.value,
+      tanggal: form.tanggal.value,
+      alamat: form.alamat.value,
+      catatan: form.catatan.value,
+    };
+    localStorage.setItem("formData", JSON.stringify(formData));
+    window.location.href = "struk.html";
+  });
 });
